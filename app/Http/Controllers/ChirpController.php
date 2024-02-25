@@ -56,9 +56,13 @@ class ChirpController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Chirp $chirp)
+    public function edit(Chirp $chirp): View
     {
-        //
+      $this->authorize('update', $chirp);
+ 
+      return view('chirps.edit', [
+          'chirp' => $chirp,
+      ]);
     }
 
     /**
