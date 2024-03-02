@@ -18,6 +18,7 @@
           <x-nav-link :href="route('chirps.index')" :active="request()->routeIs('chirps.index')">
             {{ __('Chirps') }}
           </x-nav-link>
+          
         </div>
       </div>
 

@@ -48,5 +48,9 @@
                 </div>
             @endforeach
         </div>
+        <div class="pagination">
+          {{ $chirps->links() }}
+        </div>
+
     </div>
 </x-app-layout>
