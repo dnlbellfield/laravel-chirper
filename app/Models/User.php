@@ -49,6 +49,7 @@ class User extends Authenticatable
 
     public function chirps(): HasMany
     {
+      // returning a reference to a relationship object that represents the association between the current model (User) and its chirps.
         return $this->hasMany(Chirp::class);
         
     }
