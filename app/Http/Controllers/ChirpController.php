@@ -50,7 +50,7 @@ class ChirpController extends Controller
      */
     public function show(Chirp $chirp)
     {
-        //
+        // cooment
     }
 
     /**
